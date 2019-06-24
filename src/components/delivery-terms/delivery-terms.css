@@ -1,0 +1,57 @@
+.delivery-terms__wrapper {
+  display: flex;
+}
+
+.delivery-terms-info {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.delivery-terms__time {
+  height: 40px;
+  width: 60px;
+  align-self: center;
+  font-size: 16px;
+  color: var(--font_black);
+  text-align: center;
+  border: 1px solid var(--border_grey);
+  cursor: pointer;
+  border-radius: 2px;
+  background: none;
+}
+
+.delivery-terms__span {
+  align-self: center;
+  margin: 0 9px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--font_grey);
+}
+
+.delivery-terms__label {
+  position: relative;
+}
+
+.delivery-terms__label::before {
+  content: url(images/location.svg);
+  position: absolute;
+  top: 2px;
+  left: 12px;
+}
+
+.delivery-terms__input {
+  width: 292px;
+  height: 40px;
+  border: 1px solid var(--border_grey);
+  padding-left: 33px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.delivery-terms__input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font_black);
+}

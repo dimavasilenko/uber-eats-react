@@ -1,0 +1,19 @@
+.search {
+  width: 1124px;
+  height: 79px;
+  border: none;
+  border-bottom: 1px solid var(--background_lightghrey);
+  padding: 30px 0 0 30px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search__label {
+  margin-top: 73px;
+}
+
+.search__label::before {
+  content: url(images/Shapesearch.svg);
+  position: absolute;
+  top: 115px;
+}

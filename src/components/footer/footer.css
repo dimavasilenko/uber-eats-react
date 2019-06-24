@@ -1,0 +1,12 @@
+.footer {
+  height: 120px;
+  background: var(--background_black);
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+.footer__wrapper {
+  width: 1124px;
+  margin-top: 50px;
+}

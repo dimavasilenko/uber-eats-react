@@ -1,0 +1,20 @@
+.header {
+  background: var(--white);
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  position: absolute;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  width: 121px;
+  height: 100%;
+  background: url(images/header-logo.svg) no-repeat center;
+}

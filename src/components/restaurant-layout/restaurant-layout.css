@@ -1,0 +1,18 @@
+.restaurant-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-layout__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-layout__first,
+.restaurant-layout__second,
+.restaurant-layout__third {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}

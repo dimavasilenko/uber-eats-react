@@ -1,0 +1,55 @@
+.restaurant-preview__background {
+  background: url(images/restaurant-preview.png) no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  height: 364px;
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-preview__wrapper {
+  width: 1124px;
+}
+
+.restaurant-preview {
+  width: 389px;
+  height: 204px;
+  margin: 25px 0 0 55px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 38px;
+  justify-content: space-between;
+}
+
+.restaurant-preview__title {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.restaurant-preview__footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-preview__price {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--font_grey);
+  margin: 6px;
+}
+
+.restaurant-preview__time {
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--white);
+  background: var(--background_black);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 32px;
+}

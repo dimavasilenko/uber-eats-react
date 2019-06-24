@@ -1,0 +1,26 @@
+.restaurant-menu {
+  padding: 70px;
+  display: flex;
+  width: 1124px;
+  list-style: none;
+}
+
+.restaurant-menu__nav {
+  border-bottom: 1px solid var(--border_light_grey);
+  height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-menu__card {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--font_grey);
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.restaurant-menu__card:hover {
+  color: var(--font-green);
+}

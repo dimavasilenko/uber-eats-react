@@ -1,0 +1,29 @@
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 366px;
+  text-decoration: none;
+}
+
+.restaurant-card__photo {
+  height: 256px;
+}
+
+.restaurant-card__restaurant {
+  line-height: 24px;
+  color: var(--font_black);
+  margin-top: 16px;
+}
+
+.restaurant-card__cuisines {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--font_grey);
+  margin: 4px;
+}
+
+.restaurant-card__time {
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--font_black);
+}
