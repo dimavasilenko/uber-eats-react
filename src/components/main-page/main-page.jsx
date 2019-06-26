@@ -1,27 +1,25 @@
 import React from 'react';
-import '../restaurant-layout/restaurant-layout.css';
 import '../product-card/product-card.css';
 import {RestaurantCard} from "../restaurant-card/restaurant-card";
 import {Search} from "../search/search";
-import {RestaurantCity} from "../restaurant-city/restaurant-city";
 
 export function MainPage() {
     return (
-        <div className="restaurant-layout__wrapper">
-            <div className="restaurant-layout">
+        <div className="main-page__wrapper">
+            <div className="main-page">
                 <Search/>
-                <RestaurantCity/>
-                <ul className="restaurant-layout__first">
+                <span className="main-page__city">Kyiv Restaurant</span>
+                <ul className="main-page__first">
                     <RestaurantCard/>
                     <RestaurantCard/>
                     <RestaurantCard/>
                 </ul>
-                <ul className="restaurant-layout__second">
+                <ul className="main-page__second">
                     <RestaurantCard/>
                     <RestaurantCard/>
                     <RestaurantCard/>
                 </ul>
-                <ul className="restaurant-layout__third">
+                <ul className="main-page__third">
                     <RestaurantCard/>
                     <RestaurantCard/>
                     <RestaurantCard/>

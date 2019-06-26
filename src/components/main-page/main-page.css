@@ -1,16 +1,23 @@
-.restaurant-layout {
+.main-page {
   display: flex;
   flex-direction: column;
 }
 
-.restaurant-layout__wrapper {
+.main-page__city {
+  font-size: 22px;
+  line-height: 34px;
+  margin: 56px 0 16px;
+
+}
+
+.main-page__wrapper {
   display: flex;
   justify-content: center;
 }
 
-.restaurant-layout__first,
-.restaurant-layout__second,
-.restaurant-layout__third {
+.main-page__first,
+.main-page__second,
+.main-page__third {
   padding: 0;
   display: flex;
   justify-content: space-between;

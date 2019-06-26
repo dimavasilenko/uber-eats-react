@@ -5,7 +5,7 @@ import card_logo from './images/MCdonalds.png';
 export function RestaurantCard() {
     return (
         <li>
-            <a href="https://dimavasilenko.github.io/uber-eats/src/restaurant.html" className="restaurant-card ">
+            <a href="javascript:void(0)" className="restaurant-card ">
                 <img src={card_logo} alt="food_picture"
                      className="restaurant-card__photo"/>
                 <span className="restaurant-card__restaurant "> Макдоналдс</span>
