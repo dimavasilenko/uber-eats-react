@@ -1,25 +1,30 @@
 .main-page {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 71px;
 }
 
 .main-page__city {
+  font-family: var(--main_font);
+  color: var(--font_black);
   font-size: 22px;
   line-height: 34px;
   margin: 56px 0 16px;
 
 }
 
-.main-page__wrapper {
+.main-page_wrapper {
   display: flex;
+  flex-direction: column;
+  width: 956px;
   justify-content: center;
 }
 
-.main-page__first,
-.main-page__second,
-.main-page__third {
-  padding: 0;
+.main-page-list {
+  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 15px -5px 100px;
   justify-content: space-between;
-  list-style: none;
 }

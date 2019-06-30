@@ -1,28 +1,33 @@
 .restaurant-card {
   display: flex;
   flex-direction: column;
-  width: 366px;
+  width: 308px;
+  padding: 0 0 20px;
   text-decoration: none;
 }
 
-.restaurant-card__photo {
+.restaurant-card__img {
+  width: 308px;
   height: 256px;
 }
 
 .restaurant-card__restaurant {
+  font-family: var(--main_font);
   line-height: 24px;
   color: var(--font_black);
   margin-top: 16px;
 }
 
-.restaurant-card__cuisines {
+.restaurant-card__category {
+  font-family: var(--main_font);
   font-size: 14px;
   line-height: 21px;
   color: var(--font_grey);
-  margin: 4px;
+  margin: 4px 0;
 }
 
 .restaurant-card__time {
+  font-family: var(--main_font);
   font-size: 13px;
   line-height: 21px;
   color: var(--font_black);

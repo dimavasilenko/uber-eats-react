@@ -3,6 +3,8 @@
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
   position: fixed;
   width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
 .header__wrapper {

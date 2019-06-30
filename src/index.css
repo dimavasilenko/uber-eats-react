@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import "./components/header/header.css";
 @import "./components/search/search.css";
 @import "./components/delivery-terms/delivery-terms.css";
@@ -8,18 +9,7 @@
 @import "./components/restaurant-menu/restaurant-menu.css";
 @import "./components/product-card/product-card.css";
 
-* {
-  box-sizing: border-box;
-  font-family: var(--main_font);
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,  "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
   --main_font: "Roboto", sans-serif;
   --font_black: #1d1d1d;
   --background_black: #262626;
@@ -32,9 +22,9 @@ body {
   --font-green: #327430;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
 }
+
 
 
