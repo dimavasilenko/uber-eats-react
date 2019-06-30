@@ -10,7 +10,7 @@ export function ProductCard() {
                     <span className="restaurant-card__options">С яйцом и огурцом</span>
                     <span className="restaurant-card__price">240 ₽</span>
                 </div>
-                <img src="images/dish.png" alt="food_picture"/>
+                <img src="../restaurant-page/images/dish.png" alt="food_picture"/>
             </a>
         </li>
     );

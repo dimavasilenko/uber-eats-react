@@ -1,5 +1,5 @@
 .restaurant-preview__background {
-  background: url(images/restaurant-preview.png) no-repeat;
+  background: url(../images/restaurant-preview.png) no-repeat;
   background-size: cover;
   padding-top: 80px;
   height: 364px;

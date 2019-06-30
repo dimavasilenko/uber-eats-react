@@ -15,7 +15,7 @@ function App() {
                        exact
                        component={MainPage}/>
                 <Route path='/restaurant'
-                       component={MainPage}/>
+                       component={RestaurantPage}/>
             </Router>
             <Footer/>
         </>
