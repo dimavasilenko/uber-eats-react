@@ -5,7 +5,9 @@ import { Footer } from "./components/footer/footer";
 import { RestaurantPage } from "./components/restaurant-page/restaurant-page";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+
 function App() {
+    const title = "Kyiv restaurant";
   return (
     <>
       <Header />
