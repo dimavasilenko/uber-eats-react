@@ -3,20 +3,3 @@
   align-items: center;
 }
 
-.authorization-options__sign-in {
-  width: 80px;
-  height: 40px;
-  border: 1px solid var(--border_grey);
-  background: none;
-  cursor: pointer;
-}
-
-.authorization-options__register {
-  width: 80px;
-  height: 40px;
-  background: var(--background_black);
-  color: var(--white);
-  border: none;
-  margin: 0 16px 0 27px;
-  cursor: pointer;
-}

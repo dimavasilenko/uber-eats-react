@@ -1,0 +1,13 @@
+.button {
+  width: 80px;
+  height: 40px;
+  border: 1px solid var(--border_grey);
+  background: none;
+  cursor: pointer;
+}
+
+.button--register {
+  background: var(--background_black);
+  color: var(--white);
+  margin-left: 16px;
+}
