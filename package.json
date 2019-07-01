@@ -15,7 +15,7 @@
     "eject": "react-scripts eject",
     "rename-index": "node -e \"require('fs').rename('./build/index.html', './build/200.html', (err) => { console.log(err ? err : 'File renamed!') })\"",
     "predeploy": "npm run build && npm run rename-index",
-    "deploy": "cd build && surge --domain http://uber-eats-dimavasilenko.surge.sh/",
+    "deploy": "surge --project ./build --domain http://uber-eats-dimavasilenko.surge.sh/",
     "format": "prettier --write \"src/**/*.{js,jsx,css}\""
   },
   "eslintConfig": {
@@ -39,7 +39,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run deploy"
     }
   },
   "lint-staged": {
