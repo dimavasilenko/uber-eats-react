@@ -6,12 +6,12 @@ import "../restaurant-card/restaurant-card.css";
 import "./main-page.css";
 
 export function MainPage() {
-    const title = "Kyiv Restaurant";
+  const city = "Kyiv Restaurant";
   return (
     <div className="main-page">
       <div className="main-page_wrapper">
         <Search />
-        <span className="main-page__city">{title}</span>
+        <span className="main-page__city">{city}</span>
         <ul className="main-page-list">
           {restaurants.map((restaurant, i) => {
             return (
