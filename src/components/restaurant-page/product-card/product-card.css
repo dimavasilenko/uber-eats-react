@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  font-family: var(--main_font);
+  margin-block-start: 25px;
 }
 
 .product-card__content {
@@ -22,7 +24,7 @@
   color: var(--font_black);
 }
 
-.product-card__options {
+.product-card__consist {
   font-size: 13px;
   line-height: 21px;
   color: var(--font_grey);

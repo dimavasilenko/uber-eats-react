@@ -1,8 +1,16 @@
 .restaurant-menu {
-  padding: 70px;
+  height: 80px;
+  justify-content: center;
   display: flex;
-  width: 1124px;
+  align-items: center;
+}
+
+.nav__menu {
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 956px;
 }
 
 .restaurant-menu__nav {
@@ -13,14 +21,15 @@
   align-items: center;
 }
 
-.restaurant-menu__card {
+.nav__menu__item {
+  font-family: var(--main_font);
   font-size: 16px;
   line-height: 19px;
   color: var(--font_grey);
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
-.restaurant-menu__card:hover {
+.nav__menu__item:hover {
   color: var(--font-green);
 }

@@ -7,7 +7,8 @@
 @import "./components/footer/footer.css";
 @import "components/restaurant-page/restaurant-preview/restaurant-preview.css";
 @import "components/restaurant-page/restaurant-menu/restaurant-menu.css";
-@import "components/restaurant-page/product-card.css";
+@import "components/restaurant-page/product-card/product-card.css";
+@import "components/restaurant-page/restaurant-page.css";
 
 html {
   --main_font: "Roboto", sans-serif;

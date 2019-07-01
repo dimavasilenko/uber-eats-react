@@ -1,5 +1,5 @@
 import React from 'react';
-import 'restaurant-preview.css';
+import './restaurant-preview.css';
 
 export function RestaurantPreview() {
     return (
