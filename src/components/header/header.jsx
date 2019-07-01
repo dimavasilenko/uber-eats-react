@@ -7,7 +7,7 @@ export function Header() {
     return (
         <header className="header">
             <div className="header__wrapper">
-                <div className="header__logo--wrapper">
+                <div className="header__logo-wrapper">
                     <a className="header__logo" href="https://www.ubereats.com/uk-UA/">
                     </a>
                 </div>
