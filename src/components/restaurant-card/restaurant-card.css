@@ -7,7 +7,8 @@
 }
 
 .restaurant-card__img {
-  width: 308px;
+  width: 100%;
+  object-fit: cover;
   height: 256px;
 }
 
