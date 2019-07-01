@@ -15,7 +15,8 @@
     "eject": "react-scripts eject",
     "rename-index": "node -e \"require('fs').rename('./build/index.html', './build/200.html', (err) => { console.log(err ? err : 'File renamed!') })\"",
     "predeploy": "npm run build && npm run rename-index",
-    "deploy": "cd build && surge --domain http://uber-eats-dimavasilenko.surge.sh/"
+    "deploy": "cd build && surge --domain http://uber-eats-dimavasilenko.surge.sh/",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "1.18.2",
     "surge": "^0.21.3"
   }
 }
