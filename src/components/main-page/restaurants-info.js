@@ -1987,4 +1987,23 @@ export const restaurants = [{
     "publicContact": {"publicPhoneNumber": "+380930574745"},
     "largeImageUrl": "https://uber-eats-mates.herokuapp.com/images/2c1e54e4-009d-4c2f-9720-6eeba8b179b2.jpg",
     "priceBucket": "₴₴"
+},{
+    "uuid": "6585ad84-b9b0-4ab0-be54-f22657cd29bc",
+    "title": "Musafir (вул. Саксаганського)",
+    "imageUrl": "https://uber-eats-mates.herokuapp.com/images/ed032859-05fa-4761-9a4f-ac5fb7d5859a.jpg",
+    "location": {"latitude": 50.435982, "longitude": 30.50805199999999, "address": "Saksahanskoho St, 57А"},
+    "categories": [{"uuid": "MiddleEastern", "name": "Близькосхідна", "keyName": "MiddleEastern"}],
+    "endorsement": "Найпопулярніші янтики та чебуреки",
+    "tags": [{"uuid": "MiddleEastern", "name": "Близькосхідна", "keyName": "MiddleEastern"}, {
+        "uuid": "Ukrainian",
+        "name": "Українська",
+        "keyName": "Ukrainian"
+    }, {"uuid": "Georgian", "name": "Грузинська", "keyName": "Georgian"}],
+    "etaRange": {"min": 30, "max": 40, "raw": 35},
+    "sellsAlcohol": true,
+    "slug": "musafir-вул-саксаганського",
+    "rawRatingStats": {"storeRatingScore": 4.7796934865900385, "ratingCount": "500+"},
+    "publicContact": {"publicPhoneNumber": "+380501649676"},
+    "largeImageUrl": "https://uber-eats-mates.herokuapp.com/images/48f30dc6-245f-4257-9b6f-8fc00c510fd9.jpg",
+    "priceBucket": "₴₴"
 }];
