@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 function App() {
-    const title = "Kyiv restaurant";
   return (
     <>
       <Header />
