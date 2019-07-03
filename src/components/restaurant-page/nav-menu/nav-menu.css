@@ -1,0 +1,31 @@
+.nav-menu__wrapper {
+  height: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 956px;
+}
+
+.nav-menu__item {
+  font-family: var(--main_font);
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--font_grey);
+  text-decoration: none;
+  margin-right: 36px;
+}
+
+.nav-menu__item:hover {
+  color: var(--font-green);
+}
+
+.nav-menu__link {
+  text-decoration: none;
+}
