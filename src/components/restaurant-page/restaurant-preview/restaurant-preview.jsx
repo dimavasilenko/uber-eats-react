@@ -1,18 +1,32 @@
 import React from "react";
 import "./restaurant-preview.css";
+import { restaurantMenu } from "../restaurantMenuInfo";
 
 export function RestaurantPreview() {
+  const background = `url(${restaurantMenu.largeImageUrl})`;
   return (
-    <div className="restaurant-preview__background">
+    <section
+      className="restaurant-preview__background"
+      style={{ background: background }}
+    >
       <div className="restaurant-preview__wrapper">
         <div className="restaurant-preview">
-          <span className="restaurant-preview__title">Трактир «Пушкин»</span>
+          <span className="restaurant-preview__title ">
+            {restaurantMenu.title}
+          </span>
           <div className="restaurant-preview__footer">
-            <span className="restaurant-preview__price">₴₴₴ • Европейская</span>
-            <span className="restaurant-preview__time">40-50 Min</span>
+            <span className="restaurant-preview__price">
+              {restaurantMenu.priceBucket}{" "}
+              {restaurantMenu.categories.map(category => {
+                return ` • ${category.name}`;
+              })}{" "}
+            </span>
+            <span className="restaurant-preview__time">
+              {restaurantMenu.etaRange.min} - {restaurantMenu.etaRange.max} min
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

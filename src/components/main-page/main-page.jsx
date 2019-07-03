@@ -1,7 +1,7 @@
 import React from "react";
 import { RestaurantCard } from "../restaurant-card/restaurant-card";
 import { Search } from "../search/search";
-import { restaurants } from "./restaurants-info";
+import { restaurant } from "./restaurant-info";
 import "../restaurant-card/restaurant-card.css";
 import "./main-page.css";
 
@@ -13,7 +13,7 @@ export function MainPage() {
         <Search />
         <span className="main-page__city">{city}</span>
         <ul className="main-page-list">
-          {restaurants.map((restaurant, i) => {
+          {restaurant.map((restaurant, i) => {
             return (
               <RestaurantCard
                 key={i}

@@ -1,19 +1,24 @@
 import React from "react";
 import "./product-card.css";
-import dish from "../images/dish.png";
+import { restaurantMenu } from "../restaurantMenuInfo";
 
-export function ProductCard() {
+export function ProductCard(props) {
+  const image = restaurantMenu.items[props.id].imageUrl;
   return (
-    <li>
+    <li className="product-card__wrapper">
       <a href="javascript:void(0)" className="product-card">
         <div className="product-card__content">
           <span className="product-card__title">
-            Сельдь на бородинском хлебе
+            {restaurantMenu.items[props.id].title}
           </span>
-          <span className="product-card__consist">С яйцом и огурцом</span>
-          <span className="product-card__price">99 &#8372;</span>
+          <span className="product-card__recipe">
+            {restaurantMenu.items[props.id].itemDescription}
+          </span>
+          <span className="product-card__price">
+            {restaurantMenu.items[props.id].price / 100}₴
+          </span>
         </div>
-        <img src={dish} alt="" />
+        {image && <img src={image} alt="" className="product-card__photo" />}
       </a>
     </li>
   );

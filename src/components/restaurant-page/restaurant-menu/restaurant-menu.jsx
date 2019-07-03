@@ -1,48 +1,27 @@
 import React from "react";
 import "./restaurant-menu.css";
-import { Link } from "react-router-dom";
+import { ProductCard } from "../product-card/product-card";
+import { restaurantMenu } from "../restaurantMenuInfo";
 
 export function RestaurantMenu() {
   return (
-    <div className="restaurant-menu">
-      <ul className="nav__menu">
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Закуски{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Салаты{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Супы{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Горячие блюда{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Гарниры{" "}
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav__menu__item">
-            {" "}
-            Десерты{" "}
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <section className="restaurant-menu">
+      <div className="restaurant-menu__wrapper">
+        {restaurantMenu.sections.map((section, i) => {
+          return (
+            <div>
+              <span className={"restaurant-menu__type"} id={`${section.title}`}>
+                {section.title}
+              </span>
+              <div className={"restaurant-menu__list"}>
+                {section.itemUuids.map((item, i) => {
+                  return <ProductCard id={item} />;
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }

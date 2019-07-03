@@ -1,31 +1,18 @@
 import React from "react";
 import "./restaurant-preview/restaurant-preview.css";
-import "./restaurant-menu/restaurant-menu.css";
+import "./nav-menu/nav-menu.css";
 import "./restaurant-page.css";
 import "./product-card/product-card.css";
-import { ProductCard } from "./product-card/product-card";
-import { RestaurantMenu } from "./restaurant-menu/restaurant-menu";
+import { NavMenu } from "./nav-menu/nav-menu";
 import { RestaurantPreview } from "./restaurant-preview/restaurant-preview";
+import { RestaurantMenu } from "./restaurant-menu/restaurant-menu";
 
 export function RestaurantPage() {
   return (
     <>
       <RestaurantPreview />
+      <NavMenu />
       <RestaurantMenu />
-
-      <div className="restaurantPage__wrapper">
-        <div className="restaurantPage">
-          <span className="restaurantPage__title">Закуски</span>
-          <ul className="restaurantPage__list">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </ul>
-        </div>
-      </div>
     </>
   );
 }

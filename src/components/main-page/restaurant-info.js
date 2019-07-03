@@ -1,4 +1,4 @@
-export const restaurants = [
+export const restaurant = [
   {
     uuid: "6585ad84-b9b0-4ab0-be54-f22657cd29bc",
     title: "Musafir (вул. Саксаганського)",

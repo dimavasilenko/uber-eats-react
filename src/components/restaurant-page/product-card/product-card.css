@@ -1,7 +1,12 @@
+.product-card__wrapper {
+  list-style-type: none;
+  width: 540px;
+}
+
 .product-card {
+  margin: 0 0 7px 25px;
   width: 500px;
-  height: 180px;
-  margin-right: 20px;
+  height: 160px;
   border: 1px solid rgba(117, 117, 117, 0.2);
   box-sizing: border-box;
   border-radius: 2px;
@@ -24,7 +29,7 @@
   color: var(--font_black);
 }
 
-.product-card__consist {
+.product-card__recipe {
   font-size: 13px;
   line-height: 21px;
   color: var(--font_grey);
@@ -36,4 +41,11 @@
   font-size: 15px;
   line-height: 21px;
   color: var(--font_black);
+}
+
+.product-card__photo {
+  width: 160px;
+  height: 160px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
