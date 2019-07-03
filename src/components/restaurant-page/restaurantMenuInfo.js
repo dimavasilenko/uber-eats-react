@@ -155,7 +155,7 @@ export const restaurantMenu = {
     raw: 35
   },
   imageUrl:
-    "https://uber-eats-mates.herokuapp.com/images/ed032859-05fa-4761-9a4f-ac5fb7d5859a.jpg.jpg",
+    "https://uber-eats-mates.herokuapp.com/images/ed032859-05fa-4761-9a4f-ac5fb7d5859a.jpg",
   endorsement: "Найпопулярніші янтики та чебуреки",
   tags: [
     { uuid: "MiddleEastern", name: "Близькосхідна", keyName: "MiddleEastern" },
