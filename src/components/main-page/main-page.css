@@ -15,11 +15,11 @@
 .main-page_wrapper {
   display: flex;
   flex-direction: column;
-  width: 956px;
   justify-content: center;
 }
 
 .main-page-list {
+  width: 1142px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;

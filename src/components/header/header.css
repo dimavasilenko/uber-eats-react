@@ -9,8 +9,8 @@
 
 .header__wrapper {
   display: flex;
-  width: 1000px;
-  margin: 0 auto;
+  width: 1170px;
+  margin: 0 375px;
   justify-content: space-between;
 }
 
