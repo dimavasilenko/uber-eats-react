@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   margin-top: 71px;
+  margin-bottom: -60px;
+}
+
+.main-page__grid {
+  display: grid;
+  grid-template-columns: 380px 380px 380px;
+  grid-column-gap: 20px;
 }
 
 .main-page__city {
@@ -18,7 +25,7 @@
   justify-content: center;
 }
 
-.main-page-list {
+.main-page__list {
   width: 1142px;
   list-style-type: none;
   display: flex;

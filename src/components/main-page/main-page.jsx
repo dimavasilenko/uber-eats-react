@@ -12,19 +12,21 @@ export function MainPage() {
       <div className="main-page_wrapper">
         <Search />
         <span className="main-page__city">{city}</span>
-        <ul className="main-page-list">
-          {restaurant.map((restaurant, i) => {
-            return (
-              <RestaurantCard
-                key={i}
-                title={restaurant.title}
-                categories={restaurant.categories}
-                priceBucket={restaurant.priceBucket}
-                etaRange={restaurant.etaRange}
-                imageUrl={restaurant.imageUrl}
-              />
-            );
-          })}
+        <ul className="main-page__list">
+          <div className="main-page__grid">
+            {restaurant.map((restaurant, i) => {
+              return (
+                <RestaurantCard
+                  key={i}
+                  title={restaurant.title}
+                  categories={restaurant.categories}
+                  priceBucket={restaurant.priceBucket}
+                  etaRange={restaurant.etaRange}
+                  imageUrl={restaurant.imageUrl}
+                />
+              );
+            })}
+          </div>
         </ul>
       </div>
     </div>
