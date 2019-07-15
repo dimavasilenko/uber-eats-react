@@ -3,6 +3,11 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 45.9%, 0.2);
+  position: sticky;
+  top: 71px;
+  background: var(--white);
+  z-index: 10;
 }
 
 .nav-menu__list {
@@ -10,7 +15,7 @@
   padding: 0;
   display: flex;
   justify-content: flex-start;
-  width: 956px;
+  width: 1124px;
 }
 
 .nav-menu__item {
