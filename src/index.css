@@ -12,6 +12,7 @@
 @import "components/restaurant-page/restaurant-page.css";
 
 html {
+  scroll-behavior: smooth;
   --main_font: "Roboto", sans-serif;
   --font_black: #1d1d1d;
   --background_black: #262626;

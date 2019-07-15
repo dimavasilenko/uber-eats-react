@@ -5,30 +5,67 @@ import { restaurant } from "./restaurant-info";
 import "../restaurant-card/restaurant-card.css";
 import "./main-page.css";
 
-export function MainPage() {
-  const city = "Kyiv Restaurant";
-  return (
-    <div className="main-page">
-      <div className="main-page_wrapper">
-        <Search />
-        <span className="main-page__city">{city}</span>
-        <ul className="main-page__list">
-          <div className="main-page__grid">
-            {restaurant.map((restaurant, i) => {
-              return (
-                <RestaurantCard
-                  key={i}
-                  title={restaurant.title}
-                  categories={restaurant.categories}
-                  priceBucket={restaurant.priceBucket}
-                  etaRange={restaurant.etaRange}
-                  imageUrl={restaurant.imageUrl}
-                />
-              );
-            })}
-          </div>
-        </ul>
+export class MainPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      searchValue: ""
+    };
+  }
+
+  updateSearchValue = searchValue => {
+    this.setState({
+      searchValue: searchValue
+    });
+  };
+
+  searchInCategories(restaurant) {
+    for (let i = 0; i < restaurant.categories.length; i++) {
+      if (
+        restaurant.categories[i].uuid
+          .toLowerCase()
+          .includes(this.state.searchValue.toLocaleLowerCase())
+      ) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  render() {
+    const city = "Kyiv Restaurant";
+    return (
+      <div className="main-page">
+        <div className="main-page_wrapper">
+          <Search onSearchChange={this.updateSearchValue} />
+          <span className="main-page__city">{city}</span>
+          <ul className="main-page__list">
+            <div className="main-page__grid">
+              {restaurant
+                .filter(
+                  restaurant =>
+                    restaurant.title
+                      .toLowerCase()
+                      .includes(this.state.searchValue) ||
+                    this.searchInCategories(restaurant)
+                )
+                .map((restaurant, i) => {
+                  return (
+                    <RestaurantCard
+                      key={i}
+                      title={restaurant.title}
+                      categories={restaurant.categories}
+                      priceBucket={restaurant.priceBucket}
+                      etaRange={restaurant.etaRange}
+                      imageUrl={restaurant.imageUrl}
+                    />
+                  );
+                })}
+            </div>
+          </ul>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
