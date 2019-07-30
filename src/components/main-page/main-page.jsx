@@ -66,11 +66,11 @@ export class MainPage extends React.Component {
           <Search updateSearch={this.updateSearch} />
           <span className="main-page__city">{city}</span>
           <ul className="main-page__list">
-            <div className="main-page__grid">
-              <div className="Main__restaurants-list">
+            <div className="Main__restaurants-list">
+              <div className="main-page__grid">
                 {this.state.restaurants.length > 0
                   ? this.state.restaurants
-                      .filter((restaurant, i) => {
+                      .filter(restaurant => {
                         return (
                           restaurant.title
                             .toLowerCase()
